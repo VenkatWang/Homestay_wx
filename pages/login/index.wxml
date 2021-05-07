@@ -1,0 +1,25 @@
+<van-notify id="van-notify" />
+<image class="loginBackground" src="/imgs/loginBackground.png" mode="widthFix" lazy-load="true" binderror=""
+  bindload="" />
+<view class="content">
+  <view class="title">
+    <view class="{{isActive?'active':''}}" bindtap="toLogin">登录</view>
+    <view></view>
+    <view class="{{!isActive?'active':''}}" bindtap="toSignIn">注册</view>
+  </view>
+  <view class="loginContent" wx:if="{{isActive}}">
+    <van-cell-group border="{{false}}">
+      <van-field model:value="{{ uphone }}" required clearable label="手机号码" placeholder="请输入手机号码"/>
+      <van-field model:value="{{ upassword }}" type="password" label="密码" placeholder="请输入密码" required/>
+    </van-cell-group>
+    <van-button color="#008B8B" size="large" bindtap="handleLogin">立即登录</van-button>
+  </view>
+  <view wx:else class="signinContent">
+    <van-cell-group border="{{false}}">
+      <van-field model:value="{{ uphone }}" required clearable label="手机号码" placeholder="请输入手机号码"/>
+      <van-field model:value="{{ upassword }}" type="password" label="密码" placeholder="请输入密码" required/>
+      <van-field model:value="{{ upasswordAgain }}" type="password" label="确认密码" placeholder="请再次输入密码" required/>
+    </van-cell-group>
+    <van-button color="#008B8B" size="large" bindtap="handleSignIn">注册</van-button>
+  </view>
+</view>

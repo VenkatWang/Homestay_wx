@@ -1,0 +1,24 @@
+{
+  "name": "Homestay_wx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VocalWang/Homestay_wx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VocalWang/Homestay_wx/issues"
+  },
+  "homepage": "https://github.com/VocalWang/Homestay_wx#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "axios": "^0.21.1"
+  }
+}

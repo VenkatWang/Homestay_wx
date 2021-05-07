@@ -1,0 +1,12 @@
+.van-cell-group{
+  width: 700rpx;
+  margin: 50rpx auto;
+}
+.van-uploader{
+  margin-left: 30rpx;
+}
+.submitBtn{
+  position: relative;
+  top: 130rpx;
+  left: -170rpx;
+}

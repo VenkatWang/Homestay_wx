@@ -1,0 +1,73 @@
+.category{
+  position: relative;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(247, 248, 250);
+}
+.van-sidebar-item--selected{
+  border-color: #008B8B!important;
+}
+.homestayContent{
+  position: absolute;
+  left: 170rpx;
+  top: 30rpx;
+  width: 570rpx;
+}
+.homestayItem {
+  width: 570rpx;
+  height: 200rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0rpx 16rpx 17rpx 7rpx rgba(148, 147, 147, 0.1);
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.homestayItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 8rpx;
+}
+.homestayRight{
+  position: absolute;
+  height: 200rpx;
+  left: 220rpx;
+  top: 0;
+}
+.homestayTitle {
+  font-family: PingFang-SC-Heavy;
+  font-size: 32rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 4rpx;
+  letter-spacing: 0rpx;
+  color: #000000;
+  opacity: 0.85;
+  margin-left: 5rpx;
+  margin-top: 40rpx;
+}
+
+.homestayPrice {
+  position: absolute;
+  bottom: 0;
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 16rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0rpx;
+  color: #e05c63;
+  margin-left: 5rpx;
+  position: absolute;
+  bottom: 30rpx;
+}
+
+.homestayPrice text:last-child {
+  font-size: 32rpx;
+}
+
+.van-rate {
+  position: absolute;
+  bottom: 90rpx;
+}

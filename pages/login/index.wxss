@@ -1,0 +1,100 @@
+.loginBackground {
+  width: 750rpx;
+}
+
+.content {
+  width: 638rpx;
+  height: 828rpx;
+  background-color: #ffffff;
+  box-shadow: 0rpx 8rpx 44rpx 5rpx rgba(176, 177, 177, 0.2);
+  border-radius: 10rpx;
+  position: absolute;
+  left: 0;
+  top: 295rpx;
+  right: 0;
+  margin: auto;
+}
+
+.title {
+  width: 288rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 93rpx;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title view:nth-child(2) {
+  width: 2px;
+  height: 24px;
+  background-color: #000000;
+  border-radius: 1px;
+  opacity: 0.1;
+}
+
+.title view:nth-child(1),
+.title view:nth-child(3) {
+  width: 70rpx;
+  height: 31rpx;
+  font-family: PingFang-SC-Bold;
+  font-size: 33rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 31rpx;
+  letter-spacing: 1rpx;
+  color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 15rpx;
+}
+
+.active {
+  color: #e05c63 !important;
+  border-bottom: 7rpx solid #e05c63;
+}
+
+.loginContent,.signinContent {
+  width: 563rpx;
+  height: 466rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 231rpx;
+  margin: auto;
+}
+
+.loginContent .van-cell-group{
+  width: 540rpx;
+  position: absolute;
+  left: 30rpx;
+  right: 0;
+  top: 15rpx;
+  margin: auto;
+}
+.signinContent .van-cell-group{
+  width: 540rpx;
+  position: absolute;
+  left: 30rpx;
+  right: 0;
+  top: 15rpx;
+  margin: auto;
+}
+.loginContent .van-button{
+  width: 500rpx;
+  height: 80rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.signinContent .van-button{
+  width: 500rpx;
+  height: 80rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

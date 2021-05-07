@@ -1,0 +1,28 @@
+<view class="category">
+  <view class="nav">
+    <van-sidebar active-key="{{ activeKey }}">
+      <van-sidebar-item title="聚会轰趴" />
+      <van-sidebar-item title="电竞民宿" />
+      <van-sidebar-item title="一室一厅" />
+      <van-sidebar-item title="聚会轰趴" />
+      <van-sidebar-item title="电竞民宿" />
+      <van-sidebar-item title="一室一厅" />
+    </van-sidebar>
+  </view>
+  <view class="homestayContent">
+    <view class="homestayItem" wx:for="{{list}}" wx:key="{{item}}">
+      <image src="../../imgs/homestayItem.jpg"></image>
+      <view class="homestayRight">
+        <view class="homestayTitle">Go Home主题公寓</view>
+        <van-rate size="30rpx" readonly value="{{ 4 }}" color="#e05c63" />
+        <view class="homestayPrice">
+          <text>RMB </text>
+          <text>234.00</text>
+        </view>
+      </view>
+    </view>
+    <view class="mainBottom">
+        <van-divider contentPosition="center">到底了</van-divider>
+      </view>
+  </view>
+</view>

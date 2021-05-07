@@ -1,0 +1,37 @@
+<van-notify id="van-notify" />
+<view class="topBackground">
+  <view class="topWhiteContent">
+    <van-image wx:if="{{loginBtn}}" round width="160rpx" height="160rpx" src="{{user.avatar}}" />
+    <van-image wx:else="{{loginBtn}}" round width="160rpx" height="160rpx" src="/imgs/portrait.png" />
+    <view wx:if="{{loginBtn}}" class="text">{{user.uname}}</view>
+    <view wx:else="{{loginBtn}}" class="text" bindtap="toLogin">登录/注册</view>
+    <van-icon wx:if="{{loginBtn}}" name="edit" size="23px" bindtap="toEditInformation" />
+  </view>
+</view>
+<view class="card" bindtap="toOrder">
+  <van-image width="45rpx" height="50rpx" src="/imgs/order.png"></van-image>
+  <view class="cardText">
+    <view>我的订单</view>
+    <view>点击查看我的全部订单</view>
+  </view>
+  <van-icon name="wap-nav" size="32rpx" />
+</view>
+<view class="card favorite">
+  <van-image width="45rpx" height="45rpx" src="/imgs/favorite.png"></van-image>
+  <view class="cardText">
+    <view>我的收藏</view>
+    <view>点击查看我的收藏</view>
+  </view>
+  <van-icon name="wap-nav" size="32rpx" />
+</view>
+<van-cell-group>
+  <van-cell title="用户ID" value="{{user.uid}}" />
+  <van-cell title="用户年龄" value="{{user.uage}}" />
+  <van-cell title="用户性别" value="{{user.usex}}" />
+  <van-cell title="手机号码" value="{{user.uphone}}" />
+  <van-cell title="注册时间" value="{{user.create_time}}" />
+  <van-cell title="个人信息更新时间" value="{{user.update_time}}" />
+</van-cell-group>
+<view class="exitbtn">
+  <van-button color="#008B8B" size="large" disabled="{{!loginBtn}}" bindtap="handleExit">退出登录</van-button>
+</view>

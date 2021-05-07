@@ -1,14 +1,65 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/login/index",
+    "pages/main/index",
+    "pages/category/index",
+    "pages/order/index",
+    "pages/personal/index",
+    "pages/editinformation/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "entryPagePath": "pages/category/index",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008B8B",
+    "navigationBarTitleText": "中北民宿",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#DCDCDC"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "backgroundColor": "#008B8B",
+    "color": "#cdcdcd",
+    "selectedColor": "#333333",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/main/index",
+      "text": "首页",
+      "iconPath": "icon/main.png",
+      "selectedIconPath": "icon/_main.png"
+    }, {
+      "pagePath": "pages/category/index",
+      "text": "分类",
+      "iconPath": "icon/category.png",
+      "selectedIconPath": "icon/_category.png"
+    }, {
+      "pagePath": "pages/order/index",
+      "text": "订单",
+      "iconPath": "icon/order.png",
+      "selectedIconPath": "icon/_order.png"
+    }, {
+      "pagePath": "pages/personal/index",
+      "text": "我的",
+      "iconPath": "icon/personal.png",
+      "selectedIconPath": "icon/_personal.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-rate": "@vant/weapp/rate/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index"
+  }
 }

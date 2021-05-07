@@ -1,0 +1,97 @@
+/* pages/personal/index.wxss */
+.topBackground{
+  width: 750rpx;
+  height: 250rpx;
+  background-color: #008B8B;
+  position: relative;
+}
+.topWhiteContent{
+  width: 680rpx;
+  height: 250rpx;
+  background-color:#FFF;
+  position: absolute;
+  top: 70rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20rpx;
+  box-shadow: 0 0 3rpx 5rpx #F5F5F5;
+}
+.topWhiteContent .van-image{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40rpx;
+}
+.topWhiteContent .text{
+  position: absolute;
+  left: 248rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: PingFang-SC-Bold;
+	font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 4rpx;
+	letter-spacing: 1rpx;
+	color: #000000;
+	opacity: 0.85;
+}
+.topWhiteContent .van-icon{
+  position: absolute;
+  right: 40rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card{
+  width: 650rpx;
+  height: 60rpx;
+  margin: 140rpx auto 40rpx;
+  position: relative;
+}
+.favorite{
+  margin: 80rpx auto 40rpx;
+}
+.cardText{
+  position: absolute;
+  left: 68rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cardText view:nth-child(1){
+  width: 135rpx;
+	height: 31rpx;
+	font-family: PingFang-SC-Bold;
+	font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 4rpx;
+	letter-spacing: 1rpx;
+	color: #000000;
+	opacity: 0.5;
+}
+.cardText view:nth-child(2){
+  width: 195rpx;
+	height: 17rpx;
+	font-family: PingFang-SC-Bold;
+	font-size: 18rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 4rpx;
+	letter-spacing: 1rpx;
+	color: #000000;
+	opacity: 0.3;
+}
+.card .van-icon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.van-cell-group{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.exitbtn{
+  margin: 40rpx 25rpx 0;
+}

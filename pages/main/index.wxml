@@ -1,0 +1,53 @@
+<view class="main">
+  <image src="../../imgs/mainBackground.png" class="mainBackground" mode="widthFix"></image>
+  <view class="checkIn">
+    <view class="checkInContent">
+      <view class="site">
+        <van-cell icon="location" title="中北大学附近" />
+      </view>
+      <van-divider />
+      <view class="time">
+        <van-cell icon="clock" title="请选择入住时间" value="{{ date }}" bind:click="onDisplay" is-link />
+        <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" color="#008B8B" title="请选择入住时间" />
+      </view>
+      <view class="searchBtn">
+        <van-button color="#008B8B" round>搜索</van-button>
+      </view>
+      <view class="tag">
+        <view>
+          <van-icon name="card" color="#008B8B" />
+          <text>信用免押金</text>
+        </view>
+        <view>
+          <van-icon name="youzan-shield" color="#008B8B" />
+          <text>信用免押金</text>
+        </view>
+        <view>
+          <van-icon name="fire" color="#008B8B" />
+          <text>信用免押金</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="homestay">
+    <van-dropdown-menu class="homestayScreen" active-color="#008B8B">
+      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" title="综合" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" title="价格" />
+      <van-dropdown-item value="{{ value3 }}" options="{{ option3}}" title="是否可以预定" />
+    </van-dropdown-menu>
+    <view class="homestayContent">
+      <view class="homestayItem" wx:for="{{list}}" wx:key="{{item}}">
+        <image src="../../imgs/homestayItem.jpg"></image>
+        <view class="homestayTitle">Go Home主题公寓</view>
+        <van-rate size="30rpx" readonly value="{{ 4 }}" color="#e05c63" />
+        <view class="homestayPrice">
+          <text>RMB </text>
+          <text>234.00</text>
+        </view>
+      </view>
+      <view class="mainBottom">
+        <van-divider contentPosition="center">我是有底线的</van-divider>
+      </view>
+    </view>
+  </view>
+</view>

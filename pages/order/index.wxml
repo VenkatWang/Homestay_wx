@@ -1,0 +1,3 @@
+<van-notify id="van-notify" />
+<text>订单</text>
+<button open-type="contact">客服</button>
